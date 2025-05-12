@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Barcode Generator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav>
+    <button data-tab="wifi" class="active">Wi-Fi</button>
+    <button data-tab="text">Text</button>
+    <button data-tab="link">Link</button>
+  </nav>
+
+  <main>
+    <form id="generator-form">
+      <input type="text" id="title" placeholder="Masukkan judul" required />
+
+      <div class="tab-content" id="wifi-tab">
+        <input type="text" id="ssid" placeholder="Nama Wi-Fi" />
+        <input type="password" id="password" placeholder="Password Wi-Fi" />
+      </div>
+
+      <div class="tab-content hidden" id="text-tab">
+        <textarea id="text" placeholder="Masukkan teks bebas"></textarea>
+      </div>
+
+      <div class="tab-content hidden" id="link-tab">
+        <input type="url" id="url" placeholder="Masukkan link" />
+      </div>
+
+      <button type="submit">Generate</button>
+    </form>
+
+    <section id="result" class="hidden">
+      <div class="card">
+        <div class="card-left">
+          <h2 id="card-title">Judul</h2>
+        </div>
+        <div class="card-right">
+          <!-- Set width/height agar canvas cukup besar -->
+          <canvas id="qrcode" width="200" height="200"></canvas>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- QRious library -->
+  <script src="https://cdn.jsdelivr.net/npm/qrious@4.0.2/dist/qrious.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
