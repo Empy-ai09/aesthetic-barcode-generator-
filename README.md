@@ -1,41 +1,49 @@
-# ⚡️ Barcode Everything! ⚡️
+# QRATE – Barcode Generator Keren & Interaktif
 
-[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d2410ef78f9b68af5e1f439dd1ce1e36/media/badge.svg)](https://github.com/sindresorhus/awesome)
-[![Lisensi](https://img.shields.io/badge/Lisensi-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-![Bahasa](https://img.shields.io/badge/Bahasa-Python-blue.svg)
-![Status](https://img.shields.io/badge/Status-Development-orange.svg)
+**Ubah WiFi, teks, atau link sosial media jadi barcode estetik dalam bentuk kartu digital!**
 
-**Ubah duniamu menjadi serangkaian garis dan spasi yang penuh makna!** 🚀
+[**Coba Sekarang** ›](https://qrate-qr-create.netlify.app/)
 
-Pernahkah kamu bermimpi untuk mengubah teks biasa, URL membosankan, atau bahkan koordinat lokasi menjadi kode ajaib yang bisa dipindai oleh mesin? Mimpi itu kini jadi kenyataan! 🎉
+QRATE adalah barcode generator modern yang memudahkan kamu membuat barcode interaktif dengan tampilan seperti **kartu digital** yang siap dibagikan dan di-scan di mana saja.
 
-**Barcode Everything!** adalah *generator barcode super fleksibel* yang memungkinkan kamu untuk mengonversi hampir semua jenis data menjadi berbagai format barcode populer. Lupakan kerumitan, sambut kemudahan dan kreativitas tanpa batas! ✨
+---
 
-## 🎯 Fitur Utama
+## Apa yang Bisa Kamu Buat?
 
-* **Fleksibilitas Tinggi:** Ubah teks, URL, angka, alamat email, nomor telepon, koordinat geografis, dan banyak lagi menjadi barcode.
-* **Berbagai Format Barcode:** Mendukung berbagai standar barcode populer seperti QR Code, Code 128, EAN-8, EAN-13, dan lainnya akan segera hadir!
-* **Kustomisasi Tampilan:** Atur ukuran, warna latar belakang, warna barcode, dan bahkan tambahkan margin sesuai keinginanmu. Jadikan barcodemu unik! 🎨
-* **Output Beragam:** Simpan barcode yang dihasilkan dalam berbagai format gambar seperti PNG, JPG, atau SVG. Siap untuk dicetak atau dibagikan secara digital! 🖼️
-* **Mudah Digunakan:** Dengan antarmuka yang intuitif (jika ada GUI) atau API yang sederhana (jika berupa library), membuat barcode tidak pernah semudah ini. 🖱️
-* **Ekstensibilitas:** Dirancang dengan modularitas, memudahkan penambahan format barcode baru di masa depan. 💪
+- **Barcode WiFi** – share WiFi tanpa ketik password
+- **Barcode Teks** – catatan rahasia atau pesan singkat
+- **Barcode Link** – arahkan ke Instagram, WhatsApp, LinkedIn, dll.
 
-## ⚙️ Cara Penggunaan
+Hasilnya? Kartu digital berisi barcode + info, dan langsung punya link yang bisa dibuka kapan saja.
 
-Berikut adalah contoh dasar penggunaan (sesuaikan dengan implementasi proyekmu):
+Contoh:  
+`https://qrate-qr-create.netlify.app/view/abc123`
 
-```python
-# Contoh penggunaan dengan library Python (jika ada)
-from barcode_generator import BarcodeGenerator
+---
 
-# Membuat QR Code dari sebuah URL
-qr_code = BarcodeGenerator("[https://github.com/username/barcode-everything](https://github.com/username/barcode-everything)", format="qrcode")
-qr_code.save("github_qrcode.png")
+## Fitur Unggulan
 
-# Membuat Code 128 dari sebuah teks
-code128 = BarcodeGenerator("HELLO WORLD", format="code128")
-code128.save("hello_code128.png")
+- **Tampilan seperti kartu digital** – clean & estetik
+- **Link barcode langsung bisa dibagikan**
+- **Responsif & mobile-friendly**
+- **Tanpa login, tanpa ribet – 100% gratis!**
 
-# Kustomisasi tampilan (jika fitur ini ada)
-ean = BarcodeGenerator("12345678", format="ean13", options={"background": "white", "foreground": "black", "size": (200, 100)})
-ean.save("custom_ean.png")
+---
+
+## Screenshot
+
+![Contoh Kartu](assets/sample-card-preview.png)
+
+---
+
+## Teknologi yang Digunakan
+
+- **Frontend**: React + Tailwind CSS
+- **Barcode**: qrcode.react
+- **Hosting**: Netlify
+
+---
+
+## Kontribusi
+
+Punya ide keren? Bantu kembangkan QRATE bareng!
