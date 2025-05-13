@@ -16,9 +16,6 @@ QRATE adalah barcode generator modern yang memudahkan kamu membuat barcode inter
 
 Hasilnya? Kartu digital berisi barcode + info, dan langsung punya link yang bisa dibuka kapan saja.
 
-Contoh:  
-`https://qrate-qr-create.netlify.app/view/abc123`
-
 ---
 
 ## Fitur Unggulan
