@@ -29,7 +29,8 @@ Hasilnya? Kartu digital berisi barcode + info, dan langsung punya link yang bisa
 
 ## Screenshot
 
-![Contoh Kartu](assets/sample-card-preview.png)
+![IMG-20250529-WA0002.jpg](https://github.com/user-attachments/assets/e81cf758-3cf0-4c62-b8aa-cd48e6d92524)
+
 
 ---
 
